@@ -12,11 +12,11 @@ A clean and responsive To-Do List app built using **HTML**, **Tailwind CSS**, an
 
 ## 📸 Project Screenshots
 
-### Main To-Do Interface
-![Desktop View](assets/screenshot-desktop.png)
+### 💻 Desktop View
+![Desktop View](previews/desktop.png)
 
 ### 📱 Mobile View
-![Mobile View](assets/screenshot-mobile.png)
+![Mobile View](previews/mobile.png)
 
 ---
 
