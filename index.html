@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List - Zeel</title>
+    <link rel="stylesheet" href="project8.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#08172e] to-[#000614] text-white h-screen w-full flex items-center justify-center font-sans"
+  >
+    <main
+      class="bg-gradient-to-br from-[#07162f] to-[#000614] border-[0.2px] border-[#0f1d37] rounded-3xl px-7 py-8"
+    >
+      <h1 class="text-center text-[34px] font-[600]">To-Do List</h1>
+      <div id="inputEl" class="flex items-center justify-between gap-3 pt-5">
+        <input
+          class="bg-gradient-to-r from-[#132442] to-[#0b1a33] px-[14px] py-2 basis-full text-lg border-[0.5px] border-[#1e2c4c] rounded-lg h-full outline-0"
+          type="text"
+          name="todoInput"
+          id="todoInput"
+          placeholder="Add a new task"
+        />
+        <button
+          id="addBtn"
+          class="bg-[#1056d2] text-white hover:bg-[#0d4fca] px-5 py-2 rounded-md h-full text-[18px] cursor-pointer"
+        >
+          Add
+        </button>
+      </div>
+      <div
+        id="categories"
+        class="flex justify-between capitalize bg-[#0b192f] rounded-lg overflow-hidden mt-4 text-[#bfc8da] text-[17px] font-[450]"
+      >
+        <span
+          class="category px-4 py-[6px] w-[25%] text-center rounded-lg cursor-pointer"
+          >all</span
+        >
+        <span
+          class="category px-4 py-[6px] w-[43%] text-center rounded-lg cursor-pointer"
+          >completed</span
+        >
+        <span
+          class="category px-4 py-[6px] w-[30%] text-center rounded-lg cursor-pointer"
+          >pending</span
+        >
+      </div>
+      <div id="todoListCont" class="my-[10px] px-1">
+        <!-- <div
+          class="list flex items-center py-3 border-b-[0.5px] border-[#1e2c4c]/50"
+        >
+          <input class="basis-auto w-5 h-5" type="checkbox" name="" id="" />
+          <p class="basis-full mx-3 text-lg">Buy groceries</p>
+          <i
+            class="fa-solid fa-trash basis-auto scale-120 cursor-pointer text-[#59688c]"
+          ></i>
+        </div>
+        <div
+          class="list flex items-center py-3 border-b-[0.5px] border-[#1e2c4c]/50"
+        >
+          <input class="basis-auto w-5 h-5" type="checkbox" name="" id="" />
+          <p class="basis-full mx-3 text-lg">Read a book</p>
+          <i
+            class="fa-solid fa-trash basis-auto scale-120 cursor-pointer text-[#59688c]"
+          ></i>
+        </div>
+        <div
+          class="list flex items-center py-3 border-b-[0.5px] border-[#1e2c4c]/50"
+        >
+          <input class="basis-auto w-5 h-5" type="checkbox" name="" id="" />
+          <p class="basis-full mx-3 text-lg">Complete project</p>
+          <i
+            class="fa-solid fa-trash basis-auto scale-120 cursor-pointer text-[#59688c]"
+          ></i>
+        </div>
+        <div
+          class="list flex items-center py-3 border-b-[0.5px] border-[#1e2c4c]/50"
+        >
+          <input class="basis-auto w-5 h-5" type="checkbox" name="" id="" />
+          <p class="basis-full mx-3 text-lg">Pay bills</p>
+          <i
+            class="fa-solid fa-trash basis-auto scale-120 cursor-pointer text-[#59688c]"
+          ></i>
+        </div> -->
+      </div>
+      <button
+        class="clearStorageBtn bg-red-600 text-white px-3 py-2 mt-4 rounded-lg text-base font-semibold cursor-pointer hover:bg-red-700 duration-300 w-full"
+        onclick="clearLocalrStorage()"
+      >
+        Clear Storage
+      </button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
