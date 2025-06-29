@@ -124,14 +124,17 @@ function displayTodos(finalTodos) {
 function saveToLocalStorage() {
   localStorage.setItem("todos", JSON.stringify(todosArray));
 }
-function clearLocalrStorage() {
+function clearLocalStorage() {
   if (todosArray.length == 0) {
     alert("No tasks to delete");
     return;
   }
   if (confirm("Are you sure? All tasks will be deleted")) {
-    localStorage.clear();
+    llocalStorage.removeItem("todos");
     todosArray = [];
     displayTodos(todosArray);
+    alert("All tasks have been deleted.");
+  } else {
+    alert("Deletion cancelled.");
   }
 }
