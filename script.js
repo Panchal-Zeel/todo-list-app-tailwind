@@ -129,8 +129,9 @@ function clearLocalrStorage() {
     alert("No tasks to delete");
     return;
   }
-  confirm("Are you sure? All tasks will be deleted");
-  localStorage.clear();
-  todosArray = [];
-  displayTodos(todosArray);
+  if (confirm("Are you sure? All tasks will be deleted")) {
+    localStorage.clear();
+    todosArray = [];
+    displayTodos(todosArray);
+  }
 }
