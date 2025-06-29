@@ -130,7 +130,7 @@ function clearLocalStorage() {
     return;
   }
   if (confirm("Are you sure? All tasks will be deleted")) {
-    llocalStorage.removeItem("todos");
+    localStorage.removeItem("todos");
     todosArray = [];
     displayTodos(todosArray);
     alert("All tasks have been deleted.");
